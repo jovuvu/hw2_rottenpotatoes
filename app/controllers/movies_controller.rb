@@ -9,10 +9,11 @@ class MoviesController < ApplicationController
   def index
     @all_ratings = Movie.uniq.pluck(:rating)
     
-    session[:ratings] = @all_ratings unless (params["commit"] == "Refresh" && (session[:ratings] = params["ratings"].keys rescue nil))
-    session[:Sort] = params["Sort"] unless (params["Sort"] == nil)
+    unless (params["Sort"] || session[:ratings] = params["ratings"].keys rescue nil)
+      session[:ratings] = @all_ratings 
+    end
+    session[:Sort] = params["Sort"] unless params["Sort"] == nil
       
-
     query = {}
     query[:conditions] = ["rating IN (?)", session[:ratings]] unless (session[:ratings] == nil)
     query[:order] = "#{session[:Sort]} ASC" unless (session[:Sort] == nil)
