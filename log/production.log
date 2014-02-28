@@ -18,3 +18,14 @@ Compiled jquery.js  (5ms)  (pid 2476)
 Compiled jquery_ujs.js  (1ms)  (pid 2476)
 Compiled application.js  (31ms)  (pid 2476)
 Compiled application.css  (0ms)  (pid 2476)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Compiled jquery.js  (20ms)  (pid 8996)
+Compiled jquery_ujs.js  (1ms)  (pid 8996)
+Compiled application.js  (45ms)  (pid 8996)
+Compiled application.css  (1ms)  (pid 8996)
+Connecting to database specified by database.yml
+Compiled jquery.js  (4ms)  (pid 5012)
+Compiled jquery_ujs.js  (1ms)  (pid 5012)
+Compiled application.js  (31ms)  (pid 5012)
+Compiled application.css  (1ms)  (pid 5012)
